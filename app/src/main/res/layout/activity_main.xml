@@ -39,23 +39,78 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How many candles?"/>
+
+            <SeekBar
+                android:id="@+id/candles_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5"
+                android:progress="2"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="HOORAY!!" />
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_marginHorizontal="10sp">
 
-        <Switch
-            android:id="@+id/switch1"
+            <Switch
+                android:id="@+id/frosting_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Frosting"
+                android:layout_marginVertical="10sp"
+                android:checked="true"/>
+
+            <Switch
+                android:id="@+id/candles_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Candles"
+                android:layout_marginVertical="10sp"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Frosting" />
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_marginHorizontal="10sp">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blow Out"
+                android:layout_marginVertical="10sp"/>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="yay..." />
+            <Button
+                android:id="@+id/relight_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Re-Light"
+                android:layout_marginVertical="10sp"/>
 
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goodbye"
+                android:layout_marginVertical="10sp"
+                android:onClick="goodbye"/>
+        </LinearLayout>
     </LinearLayout>
 </LinearLayout>

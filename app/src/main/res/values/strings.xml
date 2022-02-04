@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BirthdayCake</string>
     <string name="welcome_message">Happy Birthday!</string>
+    <string name="click_registered">Click registered</string>
 </resources>
